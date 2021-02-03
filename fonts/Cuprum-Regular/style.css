@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Cuprum';
+    src: local('Cuprum Regular'), local('Cuprum-Regular'),
+        url('Cuprum-Regular.woff2') format('woff2'),
+        url('Cuprum-Regular.woff') format('woff'),
+        url('Cuprum-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }

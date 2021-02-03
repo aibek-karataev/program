@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Cyntho Next';
+    src: local('Cyntho Next Regular'), local('Cyntho-Next-Regular'),
+        url('CynthoNext-Regular.woff2') format('woff2'),
+        url('CynthoNext-Regular.woff') format('woff'),
+        url('CynthoNext-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
