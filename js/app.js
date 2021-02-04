@@ -2,24 +2,6 @@ $( document ).ready(function() {
     $(".catalog-btn").click(function(){
         $(".catalog-block").toggleClass("height");
       });
-
-      // $(".slider-left").slick({
-      //   dots: true,
-      //   infinite: false,
-      //   arrows:false,
-      //   speed: 300,
-      //   autoplay:true
-      // })
-      // $(".slider-right").slick({
-      //   infinite: false,
-      //   arrows:false,
-      //   speed: 300,
-      //   vertical:true,
-      //   verticalSwiping: true,
-      //   slidesToShow: 2,
-      //   autoplay: true,
-      // })
-
   });
   var swiper = new Swiper('.swiper1', {
     slidesPerView: 'auto',
