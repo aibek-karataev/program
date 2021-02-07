@@ -1,6 +1,7 @@
 $( document ).ready(function() {
     $(".catalog-btn").click(function(){
         $(".catalog-block").toggleClass("height");
+        $(".catalog-btn").toggleClass("he");
       });
   });
   var swiper = new Swiper('.swiper1', {
@@ -14,6 +15,7 @@ $( document ).ready(function() {
     autoplay: {
       delay: 5000,
     },
+    onlyExternal:false
   });
   var swiper1 = new Swiper(".swiper2",{
     direction: 'vertical',
