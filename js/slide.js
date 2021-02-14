@@ -1,9 +1,3 @@
-$( document ).ready(function() {
-    $(".catalog-btn").click(function(){
-        $(".catalog-block").toggleClass("height");
-        $(".catalog-btn").toggleClass("he");
-      });
-  });
   var swiper = new Swiper('.swiper1', {
     slidesPerView: 'auto',
     loop:true,
@@ -46,4 +40,3 @@ $( document ).ready(function() {
       prevEl: '.navig-client .swiper-button-prev',
     },
   })
-
