@@ -298,6 +298,22 @@ a {
         align-items: center;
         width: 725px;
         height: 345px !important;
+        position: relative;
+        .podrobnee{
+          position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: Cyntho Next;
+          font-weight: 500;
+          width: 158px;
+          height: 44px;
+          background-color: #fff;
+          color: #FFB800;
+          border-radius: 40px;
+          right: 250px;
+          bottom: 85px;
+        }
       }
       .swiper-pagination {
         position: absolute !important;
@@ -579,7 +595,11 @@ a {
           img {
             position: absolute;
             top: -50px;
-          }          
+          }      
+          p{
+            margin-top: 20px;
+            font-size: 16px;
+          }    
         }
 
         p {
@@ -629,6 +649,9 @@ a {
         margin-top: 10px;
         a {
           margin-right: 30px;
+          &:hover{
+            text-decoration: underline;
+          }
         }
       }
     }
@@ -655,6 +678,9 @@ a {
         a {
           color: #fff;
           text-align: right;
+          &:hover{
+            text-decoration: underline;
+          }
         }
       }
     }
