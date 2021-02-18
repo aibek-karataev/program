@@ -499,6 +499,9 @@ a {
     }
   }
 }
+.text-yellow{
+  color: #FFB800;
+}
 .slider-user-comment {
   margin-top: 30px;
   height: 350px;
@@ -683,15 +686,15 @@ a {
   }
 }
 
-// Camera.html
+// другой.html
 
-.camera-block {
+.content-top-block {
   padding: 50px 0;
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .title-camera {
+    .title-content-top {
       p {
         font-size: 36px;
         font-weight: 600;
@@ -710,7 +713,7 @@ a {
     }
   }
 }
-.camera-in {
+.content-in {
   padding: 20px 0px;
   padding-bottom: 40px;
   .container {

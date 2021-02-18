@@ -17,9 +17,31 @@
         <div class="container">
             <ul class="nav_menu">
                 <li><a href="">О нас</a></li>
-                <li><a href="">Помощь</a></li>
+                <li><a class="modalInfo">Обратная связь</a></li>
                 <li><a href="">Клиентам</a></li>
-                <li><a href="">Контакты</a></li>
+                <li><a href="">Помощь</a></li>
+                <div id="inModal" class="modal">
+                    <div class="dModal">
+                    <div class="modal-content-sup">
+                        <div class="content">
+                            <label for="name">Ф.И.О</label>
+                            <input type="text" id="name" placeholder="Например: Али Алиев">
+                            <label for="number" >Номер</label>
+                            <input type="number" placeholder="0702014241" id="number">
+                            <label for="email" id="email">Е-mail</label>
+                            <input type="email" placeholder="aliev@gmail.com">
+                            <label for="text" id="text">По какому вопросам?</label>
+                            <input type="text" placeholder="Есть ли гарантия?">
+
+                            <div class="submits">
+                                <button class="closeModal">отмена</button>
+                                <button>отправить</button>
+                            </div>
+                        </div>
+                    </div>                        
+                    </div>
+
+                </div>
             </ul>
         </div>
     </div>
@@ -27,7 +49,9 @@
     <div class="head-menu">
         <div class="container">
             <div class="logo">
-                <img src="./img/logo.svg" alt="">
+                <a href="index.html">
+                    <img src="./img/logo.svg" alt=""> 
+                 </a>
             </div>
             <div class="adress">
                 <p class="title-m">наш адрес</p>
@@ -54,10 +78,12 @@
                 </div>
             </div>
             <div class="cart">
+                <a href="cart.html">
                 <div class="cart-icon">
                     <img src="./img/icons/cart.svg" alt="">
                     <span class="num-cart">4</span>
                 </div>
+            </a>
                 <div class="title-cart">
                     <p>
                         <strong>В корзине</strong>
@@ -67,16 +93,16 @@
             </div>
         </div>
     </div>
-    <div class="camera-block">
+    <div class="content-top-block">
         <div class="container">
-            <div class="title-camera">
+            <div class="title-content-top">
                 <p>Камеры для <br> <span>видеонаблдение</span> </p>
                 <p>Камеры для ваше здании</p>
             </div>
             <img src="./img/camera.svg" alt="">
         </div>
     </div>
-    <div class="camera-in">
+    <div class="content-in">
         <div class="container">
             <div class="item-best">
                 <div class="icon-diag item-icon"> <img src="./img/icons/diag.svg" alt=""></div>
