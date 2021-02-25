@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Program mannager - интернет магазин в Кыргызстане</title>
     <link rel="stylesheet" href="./css/swiper-bundle.min.css"> 
     <link rel="stylesheet" href="./css/style.css">
@@ -15,39 +16,54 @@
 <body>
     <!-- блок топ -->
     <div class="top-header">
-        <div class="container">
-            <ul class="nav_menu">
-                <li><a href="">О нас</a></li>
-                <li><a class="modalInfo">Обратная связь</a></li>
-                <li><a href="">Клиентам</a></li>
-                <li><a href="">Помощь</a></li>
-                <div id="inModal" class="modal">
-                    <div class="dModal">
-                    <div class="modal-content-sup">
-                        <div class="content">
-                            <label for="name">Ф.И.О</label>
-                            <input type="text" id="name" placeholder="Например: Али Алиев">
-                            <label for="number" >Номер</label>
-                            <input type="number" placeholder="0702014241" id="number">
-                            <label for="email" id="email">Е-mail</label>
-                            <input type="email" placeholder="aliev@gmail.com">
-                            <label for="text" id="text">По какому вопросам?</label>
-                            <input type="text" placeholder="Есть ли гарантия?">
-
-                            <div class="submits">
-                                <button class="closeModal">отмена</button>
-                                <button>отправить</button>
-                            </div>
-                        </div>
-                    </div>                        
+        <div class="posrel">
+            <div class="container">
+                <ul class="nav_menu">
+                    <div class="closeBtn">&times;</div>
+                    <li><a href="">О нас</a></li>
+                    <li><a class="modalInfo">Обратная связь</a></li>
+                    <li><a href="">Клиентам</a></li>
+                    <li><a href="">Помощь</a></li>
+                    <div class="selectMob">
+                        <select name="select" id="">
+                            <option value="ru" selected>RU</option>
+                            <option value="kg" selected>KG</option>
+                            <img src="./img/icons/next.select.svg" alt="">
+                        </select>
                     </div>
+                    <div id="inModal" class="modal">
+                        <div class="dModal">
+                        <div class="modal-content-sup">
+                            <div class="content">
+                                <label for="name">Ф.И.О</label>
+                                <input type="text" id="name" placeholder="Например: Али Алиев">
+                                <label for="number" >Номер</label>
+                                <input type="number" placeholder="0702014241" id="number">
+                                <label for="email" id="email">Е-mail</label>
+                                <input type="email" placeholder="aliev@gmail.com">
+                                <label for="text" id="text">По какому вопросам?</label>
+                                <input type="text" placeholder="Есть ли гарантия?">
 
-                </div>
-            </ul>
+                                <div class="submits">
+                                    <button class="closeModal">отмена</button>
+                                    <button>отправить</button>
+                                </div>
+                            </div>
+                        </div>                        
+                        </div>
+
+                    </div>
+                </ul>
+            </div>            
         </div>
+
+
     </div>
     <div class="head-menu">
         <div class="container">
+            <div class="gamburger">
+                <div class="gamburger-menu"></div>
+            </div>
             <div class="logo">
                 <a href="index.html">
                    <img src="./img/logo.svg" alt=""> 
@@ -106,14 +122,14 @@
                     <li><a href="">Компьютеры</a></li>
                     <li><a href="">Винчестеры</a></li>
                     <li><a href="">Турникеты</a></li>
-                    <li><a href="">Камеры</a></li>
+                    <li><a href="camera.html">Камеры</a></li>
                 </ul>
             </div>
             <form>
                 <input type="text" placeholder="Поис ко сайту" class="search">
                 <button>
                     <img src="./img/icons/search.svg" alt="">
-                    Искать
+                   <span>Искать</span> 
                 </button>
             </form>
             <div class="select">
@@ -213,7 +229,7 @@
     <div class="popular-products">
         <div class="container">
             <div class="slider-left-btn">
-                <p class="pop-title">Популярные <br> товары</p>
+                <p class="pop-title">Популярные товары</p>
                 <div class="navig">
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
@@ -223,83 +239,65 @@
                 <div class="swiper-container swiper3">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="./img/not.svg" alt="" class="modProd">
-                            <p class="category-type"><span>категория</span> <span>Компьтеры</span></p>
-                            <p class="modProd">компьтер Apple </p>
-                            <p><strong>56000 som</strong></p>
-                            <div class="cart-product"><a href="cart.html"><img src="./img/icons/cart-pop.svg" alt=""></a></div>
+                            <div class="pop-prduct-item">
+                                <a href="product.html"><img src="./img/not.svg" alt="" ></a>
+                                <p class="category-type"><span>категория</span> <span>Компьтеры</span></p>
+                                <p> <a href="product.html">компьтер Apple</a></p>
+                                <p><strong>56000 som</strong></p>
+                                <div class="cart-product"><a href="cart.html"><img src="./img/icons/cart-pop.svg" alt=""></a></div>                                
+                            </div>
+
                         </div>
                         <div class="swiper-slide">
-                            <img src="./img/cam.svg" alt="">
-                            <p class="category-type"><span>категория</span> <span>Видеонаблюдения</span></p>
-                            <p>камера Canon</p>
-                            <p><strong>56000 som</strong></p>
-                            <div class="cart-product"><img src="./img/icons/cart-pop.svg" alt=""></div>
+                            <div class="pop-prduct-item">
+                                <img src="./img/cam.svg" alt="">
+                                <p class="category-type"><span>категория</span> <span>Видеонаблюдения</span></p>
+                                <p> <a href="product.html"> камера Canon</a></p>
+                                <p><strong>56000 som</strong></p>
+                                <div class="cart-product"><img src="./img/icons/cart-pop.svg" alt=""></div>                                
+                            </div>
+
                         </div>
                         <div class="swiper-slide">
-                            <img src="./img/not.svg" alt="">
-                            <p class="category-type"><span>категория</span> <span>Компьтеры</span></p>
-                            <p>компьтер Apple</p>
-                            <p><strong>56000 som</strong></p>
-                            <div class="cart-product"><img src="./img/icons/cart-pop.svg" alt=""></div>
+                            <div class="pop-prduct-item">
+                                <img src="./img/not.svg" alt="">
+                                <p class="category-type"><span>категория</span> <span>Компьтеры</span></p>
+                                <p>компьтер Apple</p>
+                                <p><strong>56000 som</strong></p>
+                                <div class="cart-product"><img src="./img/icons/cart-pop.svg" alt=""></div>                                
+                            </div>
+
                         </div>
                         <div class="swiper-slide">
-                            <img src="./img/cam.svg" alt="">
-                            <p class="category-type"><span>категория</span> <span>Видеонаблюдения</span></p>
-                            <p>камера Canon</p>
-                            <p><strong>56000 som</strong></p>
-                            <div class="cart-product"><img src="./img/icons/cart-pop.svg" alt=""></div>
+                            <div class="pop-prduct-item">
+                                <img src="./img/cam.svg" alt="">
+                                <p class="category-type"><span>категория</span> <span>Видеонаблюдения</span></p>
+                                <p>камера Canon</p>
+                                <p><strong>56000 som</strong></p>
+                                <div class="cart-product"><img src="./img/icons/cart-pop.svg" alt=""></div>                                
+                            </div>
+
                         </div>
                         <div class="swiper-slide">
-                            <img src="./img/not.svg" alt="">
-                            <p class="category-type"><span>категория</span> <span>Компьтеры </span></p>
-                            <p>компьтер Apple</p>
-                            <p><strong>56000 som</strong></p>
-                            <div class="cart-product"><img src="./img/icons/cart-pop.svg" alt=""></div>
+                            <div class="pop-prduct-item">
+                                <img src="./img/not.svg" alt="">
+                                <p class="category-type"><span>категория</span> <span>Компьтеры </span></p>
+                                <p>компьтер Apple</p>
+                                <p><strong>56000 som</strong></p>
+                                <div class="cart-product"><img src="./img/icons/cart-pop.svg" alt=""></div>                                
+                            </div>
+
                         </div>
                         <div class="swiper-slide">
-                            <img src="./img/cam.svg" alt="">
-                            <p class="category-type"><span>категория</span> <span>Видеонаблюдения</span></p>
-                            <p>камера Canon</p>
-                            <p><strong>56000 som</strong></p>
-                            <div class="cart-product"><img src="./img/icons/cart-pop.svg" alt=""></div>
+                            <div class="pop-prduct-item">
+                                <img src="./img/cam.svg" alt="">
+                                <p class="category-type"><span>категория</span> <span>Видеонаблюдения</span></p>
+                                <p>камера Canon</p>
+                                <p><strong>56000 som</strong></p>
+                                <div class="cart-product"><img src="./img/icons/cart-pop.svg" alt=""></div>                                
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- modal window -->
-                <div class="modal-products">
-                    <div class="dModal">
-                        <div class="modal-content">
-                            <div class="header-modal">
-                                <img src="./img/close.svg" alt="" class="closeProduct">
-                            </div>
-                            <div class="content">
-                                <div class="img-product">
-                                    <img src="./img/cam.svg" alt="">
-                                </div>
-                                <div class="title-product">
-                                    <p><strong>Название</strong></p>
-                                    <p>Canon 45xl 300</p>
-                                </div>
-
-                                <div class="characteristic">
-                                    <p ><strong>Характериситика</strong></p>
-                                    <p>180 градус могут видеть 56 мегапиксель</p>
-                                </div>
-                            </div>
-                            <div class="footer-modal">
-                                <div class="price-product">
-                                    <b>Цена</b>
-                                    <strong>56 000 сом</strong>
-                                </div>
-                                <div class="cart">
-                                    <button class="buy">купить</button>
-                                    <button class="addToCart"><img src="./img/icons/cart-white.svg" alt=""></button>
-                                </div>
-                            </div>
-                        </div>                        
-                    </div>
-
                 </div>
             </div>
         </div>
@@ -319,40 +317,58 @@
                 <div class="swiper-container swiper4">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
+                            <div class="user-item-comment">
+                                <div class="slider-us">
+                                    <img src="./img/icons/user.svg" alt="">
+                                    <p>&emsp;Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+                                </div>                                
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="user-item-comment">
                             <div class="slider-us">
                                 <img src="./img/icons/user.svg" alt="">
                                 <p>&emsp;Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+                            </div>                                
                             </div>
+
                         </div>
                         <div class="swiper-slide">
-                            <div class="slider-us">
-                                <img src="./img/icons/user.svg" alt="">
-                                <p>&emsp;Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+                            <div class="user-item-comment">
+                                <div class="slider-us">
+                                    <img src="./img/icons/user.svg" alt="">
+                                    <p>&emsp;Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+                                </div>                                
                             </div>
+
                         </div>
                         <div class="swiper-slide">
-                            <div class="slider-us">
-                                <img src="./img/icons/user.svg" alt="">
-                                <p>&emsp;Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+                            <div class="user-item-comment">
+                                <div class="slider-us">
+                                    <img src="./img/icons/user.svg" alt="">
+                                    <p>&emsp;Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+                                </div>                                
                             </div>
+
                         </div>
                         <div class="swiper-slide">
-                            <div class="slider-us">
-                                <img src="./img/icons/user.svg" alt="">
-                                <p>&emsp;Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+                            <div class="user-item-comment">
+                                <div class="slider-us">
+                                    <img src="./img/icons/user.svg" alt="">
+                                    <p>&emsp;Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+                                </div>                                
                             </div>
+
                         </div>
                         <div class="swiper-slide">
-                            <div class="slider-us">
-                                <img src="./img/icons/user.svg" alt="">
-                                <p>&emsp;Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+                            <div class="user-item-comment">
+                                <div class="slider-us">
+                                    <img src="./img/icons/user.svg" alt="">
+                                    <p>&emsp;Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Меня, дорогу!</p>
+                                </div>                                
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider-us">
-                                <img src="./img/icons/user.svg" alt="">
-                                <p>&emsp;Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Меня, дорогу!</p>
-                            </div>
+
                         </div>
                     </div>
                 </div>

@@ -29,5 +29,25 @@ $( document ).ready(function() {
         $(".modal-products").fadeOut();
       }
     })
+    // side-menu mobile
+    $(".gamburger").click(function(){
+      $(".nav_menu").css({"width": "50%"});
+      $(".nav_menu li").css({"left": "0px"});
+      $(".selectMob").css({"left": "0px"});
+
+    })
+    $(".closeBtn").click(function(){
+      $(".nav_menu").css({"width": "-10%"});
+      $(".nav_menu li").css({"left": "-99999px"});
+      $(".selectMob").css({"left": "-99999px"});
+    })
+
 });
+
+// product
+
+function productImg(smallImg){
+  let fullImg = document.getElementById("imgBox");
+  fullImg.src = smallImg.src;
+}
 

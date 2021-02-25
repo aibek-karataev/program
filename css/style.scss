@@ -25,17 +25,38 @@ a {
   display: flex;
   align-items: center;
   width: 100%;
-  .container {
-    .nav_menu {
-      display: flex;
-      align-items: center;
-      li {
-        margin-right: 30px;
-        font-family: Cyntho Next;
-        font-size: 14px;
+  .closeBtn{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 60px;
+    color: #FFB800;
+    cursor: pointer;
+  }
+  .posrel{
+    width: 100%;
+    .container {
+      .nav_menu {
+        display: flex;
+        align-items: center;
+        li {
+          margin-right: 30px;
+          font-family: Cyntho Next;
+          font-size: 14px;
+          a{
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+        }
+        .selectMob{
+          display: none;
+        }
       }
     }
   }
+
 }
 
 // Header md
@@ -49,6 +70,28 @@ a {
     align-items: center;
     justify-content: space-between;
     height: 90px;
+    .gamburger{
+      display: none;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      .gamburger-menu{
+        width: 65px;
+        height: 65px;
+       background-image: url('./../img/icons/menu-mobile.svg');
+       background-size: 80%;
+       background-repeat: no-repeat;
+       background-position: center;
+       background-color: #fff;
+        box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.2);
+        border-radius: 50%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+    }
     .title-m {
       text-align: center;
       color: #717171;
@@ -151,7 +194,6 @@ a {
 .catalog {
   background-color: #eaeaea;
   padding: 10px 0;
-
   .container {
     display: flex;
     align-items: center;
@@ -228,7 +270,7 @@ a {
         color: white;
         z-index: 5;
         border-radius: 20px;
-        margin-left: -13px;
+        margin-left: -17px;
         margin-right: 2px;
         cursor: pointer;
         font-size: 16px;
@@ -297,7 +339,6 @@ a {
         justify-content: center;
         align-items: center;
         width: 725px;
-        height: 345px !important;
         position: relative;
         .podrobnee{
           position: absolute;
@@ -311,8 +352,8 @@ a {
           background-color: #fff;
           color: #FFB800;
           border-radius: 40px;
-          right: 250px;
-          bottom: 85px;
+          right: 15%;
+          bottom: 20%;
         }
       }
       .swiper-pagination {
@@ -410,7 +451,6 @@ a {
 }
 .popular-products {
   margin-top: 30px;
-  height: 350px;
   background-color: #eaeaea;
   .container {
     display: flex;
@@ -462,16 +502,22 @@ a {
         height: 300px;
       }
       .swiper-slide {
-        text-align: center;
-        font-size: 16px;
-        background: #ffffff;
         display: flex;
         align-items: center;
-        flex-wrap: wrap;
-        width: 230px;
-        height: 300px !important;
-        padding: 13px;
-        box-shadow: 5px 7px 23px -1px rgba(0, 0, 0, 0.25);
+        justify-content: center;
+        .pop-prduct-item{
+          text-align: center;
+          font-size: 16px;
+          background: #ffffff;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          width: 230px ;
+          height: 300px !important;
+          padding: 13px;
+          box-shadow: 5px 7px 23px -1px rgba(0, 0, 0, 0.25);          
+        }
+
         p {
           text-align: left;
           font-family: Cyntho Next;
@@ -520,7 +566,6 @@ a {
 }
 .slider-user-comment {
   margin-top: 30px;
-  height: 350px;
   .container {
     display: flex;
     align-items: center;
@@ -575,12 +620,14 @@ a {
         justify-content: center;
       }
       .swiper-slide {
-        background: transparent;
-        width: 230px;
-        height: 300px !important;
         position: relative;
         padding-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         .slider-us{
+          width: 230px;
+          height: 270px ;
           text-align: center;
           font-size: 18px;
           background: #F5F5F5;
@@ -677,7 +724,7 @@ a {
         display: flex;
         a {
           color: #fff;
-          text-align: right;
+          text-align: left;
           &:hover{
             text-decoration: underline;
           }
@@ -712,7 +759,7 @@ a {
   }
 }
 
-// другой.html
+// blocks.html
 
 .content-top-block {
   padding: 50px 0;
@@ -824,6 +871,105 @@ a {
     }
   }
 }
+
+
+// product.html
+.product-about{
+ .container{
+   padding: 10px 0px 50px 0px;
+  .title-products{
+    font-family:Cyntho Next ;
+    h3{
+      font-size: 26px;    
+      padding: 5px 0px 10px 0px;  
+    }
+    p{
+      font-size: 16px;
+      font-weight: normal;
+      color: #707070;
+      padding-top: 8px;
+    }
+
+  }
+  .product{
+    display: flex;
+    position: relative;
+    .product-small-img{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-right: 10px;
+      img{
+        height: 92px;
+        margin: 10px 0;
+        cursor: pointer;   
+        display: flex;
+        justify-content: flex-start; 
+        opacity: 0.6;
+        &:hover{
+          opacity: 1;
+        }  
+      }
+    }
+    .img-container{
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      padding: 10px 0px;
+      img{
+      width:500px;      
+      }
+    }
+    .about-product{
+      font-family:Cyntho Next;
+      padding: 10px 0px 0px 20px;
+      p{
+        b{
+          font-size: 22px;
+          font-weight: bold;
+        }
+      }
+      ul{
+        margin-top: 15px;
+        list-style: circle;
+        li{
+          padding: 5px 0px;
+          margin-left: 20px;
+
+        }
+      }
+      .btn-add{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .CartBtn{
+          width: 180px;
+          height: 45px;
+          font-size: 16px;
+          font-family: Cyntho Next ;
+          font-weight: 600;
+          border-radius: 5px;
+          cursor: pointer;
+          background-color: #f5c400;
+          border: 0;
+          outline: 0;
+          margin-top: 10px;
+        }        
+      }
+      .price-product{
+        margin-top: 10px;
+        padding-left: 5px;
+        font-size: 20px;
+      }
+
+    }
+  }
+} 
+}
+
+
 
 // modal window
 #inModal {
