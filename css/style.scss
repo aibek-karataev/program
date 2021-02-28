@@ -54,6 +54,7 @@ a {
           display: none;
         }
       }
+
     }
   }
 
@@ -275,6 +276,9 @@ a {
         cursor: pointer;
         font-size: 16px;
         padding: 0px 20px;
+        .fa-search{
+          font-size: 20px ;
+        }
       }
     }
     .select {
@@ -317,14 +321,12 @@ a {
 }
 .slider-block {
   .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 20px 0px;
     .slider-lf {
+      width: 100%;
       .swiper-container {
-        width: 725px;
-        height: 345px;
+        width: 100%;
+        height: auto;
       }
       .swiper-container-horizontal
         > .swiper-pagination-bullets
@@ -334,11 +336,10 @@ a {
       .swiper-slide {
         text-align: center;
         font-size: 18px;
-        background: rgb(148, 47, 47);
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 725px;
+        width: 100%;
         position: relative;
         .podrobnee{
           position: absolute;
@@ -352,15 +353,18 @@ a {
           background-color: #fff;
           color: #FFB800;
           border-radius: 40px;
-          right: 15%;
-          bottom: 20%;
+          right: 10%;
+          bottom: 10%;
+        }
+        img{
+          width: 100%;
         }
       }
       .swiper-pagination {
         position: absolute !important;
-        bottom: 38px;
+        bottom: 8%;
         display: flex;
-        margin-left: 70px;
+        margin-left: 3%;
       }
       .swiper-pagination-bullet {
         width: 14px;
@@ -373,38 +377,7 @@ a {
         }
       }
     }
-    .slider-rf {
-      .swiper-container {
-        width: 400px;
-        height: 345px;
-      }
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #eaeaea;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 400px;
-        height: 172px !important;
-      }
-      .swiper-pagination {
-        position: absolute !important;
-        bottom: 38px;
-        display: flex;
-        margin-left: 70px;
-      }
-      .swiper-pagination-bullet {
-        width: 14px;
-        height: 14px;
-        opacity: 0.5;
-        background-color: #fff;
-        &-active {
-          background-color: #fff;
-          opacity: 1;
-        }
-      }
-    }
+
   }
 }
 
@@ -564,120 +537,22 @@ a {
 .text-yellow{
   color: #FFB800;
 }
-.slider-user-comment {
-  margin-top: 30px;
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 25px 0px;
-    position: relative;
-    .pop-title {
-      font-family: Cyntho Next;
-      font-size: 24px;
-      font-weight: 600;
-      margin-top: -40px;
-    }
-    .navig-client {
+// Наши партнеры
+.partners{
+  padding: 20px 0px 30px 0px;
+  .container{
+    .title_block_partners{
       display: flex;
       align-items: center;
-      position: relative;
-      margin-top: 70px;
-      width: 149px;
+      justify-content: center;
+      font-family: Cyntho Next;
+      padding: 5px 0px 10px 0px;
     }
-    .swiper-button-prev {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background-color: #ffb800;
-      font-size: 18px;
-      outline: 0;
-      &::after {
-        font-size: 30px;
-        font-weight: 800;
-        color: #fff;
-      }
-    }
-    .swiper-button-next {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background-color: #ffb800;
-      font-size: 18px;
-      outline: 0;
-      &::after {
-        font-size: 30px;
-        font-weight: 800;
-        color: #fff;
-      }
-    }
-    .slider-comment {
-      .swiper-container {
-        width: 800px;
-        height: 330px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .swiper-slide {
-        position: relative;
-        padding-top: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        .slider-us{
-          width: 230px;
-          height: 270px ;
-          text-align: center;
-          font-size: 18px;
-          background: #F5F5F5;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-          width: 230px;
-          height: 250px ;
-          padding: 10px;
-          position: relative;
-          img {
-            position: absolute;
-            top: -50px;
-          }      
-          p{
-            margin-top: 20px;
-            font-size: 16px;
-          }    
-        }
-
-        p {
-          text-align: left;
-          font-family: Cyntho Next;
-        }
-        .category-type {
-          width: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          font-family: Cuprum;
-          color: #717171;
-        }
-      }
-      .swiper-pagination {
-        position: absolute !important;
-        bottom: 38px;
-        display: flex;
-        margin-left: 70px;
-      }
-      .swiper-pagination-bullet {
-        width: 14px;
-        height: 14px;
-        opacity: 0.5;
-        background-color: #fff;
-        &-active {
-          background-color: #fff;
-          opacity: 1;
-        }
-      }
+    .partners_blocks{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
     }
   }
 }
@@ -793,9 +668,11 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     .item-best {
       display: flex;
       align-items: center;
+      margin: 10px 0px;
       .text-info {
         font-size: 24px;
         font-family: Cyntho Next;
@@ -831,7 +708,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
     .product-item {
       text-align: center;
       font-size: 16px;
@@ -881,7 +757,7 @@ a {
     font-family:Cyntho Next ;
     h3{
       font-size: 26px;    
-      padding: 5px 0px 10px 0px;  
+      padding: 10px 0px 10px 0px;  
     }
     p{
       font-size: 16px;

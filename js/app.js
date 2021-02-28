@@ -31,7 +31,7 @@ $( document ).ready(function() {
     })
     // side-menu mobile
     $(".gamburger").click(function(){
-      $(".nav_menu").css({"width": "50%"});
+      $(".nav_menu").css({"width": "70%"});
       $(".nav_menu li").css({"left": "0px"});
       $(".selectMob").css({"left": "0px"});
 
@@ -50,4 +50,4 @@ function productImg(smallImg){
   let fullImg = document.getElementById("imgBox");
   fullImg.src = smallImg.src;
 }
-
+AOS.init();

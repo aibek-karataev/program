@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./fonts/Cuprum-Regular/style.css" />
     <link rel="stylesheet" href="./fonts/CynthoNext-Regular/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -137,6 +139,7 @@
             </div>
         </div>
     </div>
+    <!-- Инфо продук -->
     <div class="product-about">
         <div class="container">
             <div class="title-products">
@@ -144,9 +147,10 @@
                     Категория -
                     <a href="notebooks">Ноутбуки</a>
                 </p>
-                <h3>Ноутбук ASUS TUF Dash FX516PR-AZ019 (90NR0651-M01080), черный</h3>
+                <h3 data-aos="zoom-in" data-aos-duration="1500">Ноутбук ASUS TUF Dash FX516PR-AZ019 (90NR0651-M01080), черный</h3>
             </div>
-            <div class="product">
+            <div class="product" data-aos="zoom-in" data-aos-duration="2000">
+                <!-- Фото продукт -->
                 <div class="product-small-img">
                     <img src="./img/products/asus.webp" alt="" onclick="productImg(this)" />
                     <img src="./img/products/asus1.webp" alt="" onclick="productImg(this)" />
@@ -157,6 +161,7 @@
                 <div class="img-container">
                     <img src="./img/products/asus.webp" alt="" id="imgBox" />
                 </div>
+                <!-- Характеристика -->
                 <div class="about-product">
                     <p><b>Характеристики</b></p>
                     <ul>
@@ -191,7 +196,7 @@
     </div>
 
     <!-- Популярный продукт -->
-    <div class="popular-products">
+    <div class="popular-products" data-aos="fade-down" data-aos-duration="2000">
         <div class="container">
             <div class="slider-left-btn">
                 <p class="pop-title">
@@ -350,6 +355,7 @@
     <script src="./js/swiper-bundle.js"></script>
     <script src="./js/slide.js"></script>
     <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/app.js"></script>
 </body>
 
