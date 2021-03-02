@@ -43,6 +43,15 @@ $( document ).ready(function() {
     })
 
 });
+// resive modAL window false
+  if (screen.width > 992) {
+    $(".link_product").addClass("modProd");
+  }
+  else{
+    $(".link_product").removeClass("modProd");
+    $(".link_product a").attr("href", "product.html");
+    $(".link_product_img ").attr("href", "product.html");
+  }
 
 // product
 
