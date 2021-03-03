@@ -2,15 +2,16 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Program mannager - интернет магазин в Кыргызстане</title>
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./fonts/Cuprum-Regular/style.css" />
-    <link rel="stylesheet" href="./fonts/CynthoNext-Regular/style.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="./fonts/Cuprum-Regular/style.css">
+    <link rel="stylesheet" href="./fonts/CynthoNext-Regular/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
 
 </head>
 
@@ -21,29 +22,31 @@
             <div class="container">
                 <ul class="nav_menu">
                     <div class="closeBtn">&times;</div>
-                    <li><a href="">О нас</a></li>
+                    <li><a href="index.html">Главная</a></li>
                     <li><a class="modalInfo">Обратная связь</a></li>
-                    <li><a href="">Клиентам</a></li>
-                    <li><a href="">Помощь</a></li>
+                    <li><a href="delivery.html">Доставка</a></li>
+                    <li><a href="warranty.html">Гарантия</a></li>
+                    <li><a href="./about.html">О магазине</a></li>
                     <div class="selectMob">
                         <select name="select" id="">
                             <option value="ru" selected>RU</option>
                             <option value="kg" selected>KG</option>
-                            <img src="./img/icons/next.select.svg" alt="" />
+                            <img src="./img/icons/next.select.svg" alt="">
                         </select>
                     </div>
+                    <!-- modal window -->
                     <div id="inModal" class="modal">
                         <div class="dModal">
                             <div class="modal-content-sup">
                                 <div class="content">
                                     <label for="name">Ф.И.О</label>
-                                    <input type="text" id="name" placeholder="Например: Али Алиев" />
+                                    <input type="text" id="name" placeholder="Например: Али Алиев">
                                     <label for="number">Номер</label>
-                                    <input type="number" placeholder="0702014241" id="number" />
+                                    <input type="number" placeholder="0702014241" id="number">
                                     <label for="email" id="email">Е-mail</label>
-                                    <input type="email" placeholder="aliev@gmail.com" />
+                                    <input type="email" placeholder="aliev@gmail.com">
                                     <label for="text" id="text">По какому вопросам?</label>
-                                    <input type="text" placeholder="Есть ли гарантия?" />
+                                    <input type="text" placeholder="Есть ли гарантия?">
 
                                     <div class="submits">
                                         <button class="closeModal">отмена</button>
@@ -56,22 +59,25 @@
                 </ul>
             </div>
         </div>
+
+
     </div>
     <div class="head-menu">
         <div class="container">
             <div class="gamburger">
-                <div class="gamburger-menu"><span></span></div>
+                <div class="gamburger-menu"></div>
             </div>
             <div class="logo">
                 <a href="index.html">
-                    <img src="./img/logo.svg" alt="" />
+                    <img src="./img/logo.svg" alt="">
                 </a>
             </div>
+            <!-- адрес -->
             <div class="adress">
                 <p class="title-m">наш адрес</p>
                 <div class="block-loc">
                     <div class="loc-icon">
-                        <img src="./img/icons/location.svg" alt="" />
+                        <img src="./img/icons/location.svg" alt="">
                     </div>
                     <div class="text-loc">
                         <p>г.Ош</p>
@@ -79,11 +85,12 @@
                     </div>
                 </div>
             </div>
+            <!-- Обрантая связь -->
             <div class="telcon">
                 <p class="title-m">обратная связь</p>
                 <div class="block-tel">
                     <div class="tel-icon">
-                        <img src="./img/icons/tel.svg" alt="" />
+                        <img src="./img/icons/tel.svg" alt="">
                     </div>
                     <div class="text-tel">
                         <p><strong>0221110008</strong></p>
@@ -91,10 +98,11 @@
                     </div>
                 </div>
             </div>
+            <!-- Корзиа -->
             <div class="cart">
                 <a href="cart.html">
                     <div class="cart-icon">
-                        <img src="./img/icons/cart.svg" alt="" />
+                        <img src="./img/icons/cart.svg" alt="">
                         <span class="num-cart">4</span>
                     </div>
                 </a>
@@ -112,7 +120,7 @@
         <div class="container">
             <div class="catalog-btn">
                 Каталог
-                <img src="./img/icons/menu.svg" alt="" />
+                <img src="./img/icons/menu.svg" alt="">
             </div>
             <div class="catalog-block">
                 <ul class="katalog">
@@ -124,17 +132,17 @@
                 </ul>
             </div>
             <form>
-                <input type="text" placeholder="Поис ко сайту" class="search" />
+                <input type="text" placeholder="Поис ко сайту" class="search">
                 <button>
-                    <img src="./img/icons/search.svg" alt="" />
-                    Искать
+                    <i class="fas fa-search"></i>
+                    <span>Искать</span>
                 </button>
             </form>
             <div class="select">
                 <select name="select" id="">
                     <option value="ru" selected>RU</option>
                     <option value="kg" selected>KG</option>
-                    <img src="./img/icons/next.select.svg" alt="" />
+                    <i class="fas fa-caret-down"></i>
                 </select>
             </div>
         </div>
@@ -147,7 +155,8 @@
                     Категория -
                     <a href="notebooks">Ноутбуки</a>
                 </p>
-                <h3 data-aos="zoom-in" data-aos-duration="1500">Ноутбук ASUS TUF Dash FX516PR-AZ019 (90NR0651-M01080), черный</h3>
+                <h3 data-aos="zoom-in" data-aos-duration="1500">Ноутбук ASUS TUF Dash FX516PR-AZ019 (90NR0651-M01080),
+                    черный</h3>
             </div>
             <div class="product" data-aos="zoom-in" data-aos-duration="2000">
                 <!-- Фото продукт -->
@@ -187,22 +196,18 @@
 
                     <div class="price-product"><b>Цена: 146 000сом</b></div>
                     <div class="btn-add">
-                        <button class="CartBtn">Оформить заказ</button> 
+                        <a href="./oformit.html"><button class="CartBtn">Оформить заказ</button></a> 
                         <button class="CartBtn">Добавить в корзину</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <!-- Популярный продукт -->
-    <div class="popular-products" >
+    <div class="popular-products">
         <div class="container">
             <div class="slider-left-btn">
-                <p class="pop-title">
-                    Популярные <br />
-                    товары
-                </p>
+                <p class="pop-title">Популярные товары</p>
                 <div class="navig">
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
@@ -212,80 +217,68 @@
                 <div class="swiper-container swiper3">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="pop-prduct-item">
-                                <a href="product.html"><img src="./img/not.svg" alt="" /></a>
-                                <p class="category-type">
-                                    <span>категория</span> <span>Компьтеры</span>
-                                </p>
-                                <p><a href="product.html">компьтер Apple</a></p>
-                                <p><strong>56000 som</strong></p>
-                                <div class="cart-product">
-                                    <a href="cart.html"><img src="./img/icons/cart-pop.svg" alt="" /></a>
+                            <div class="pop-product-item">
+                                <a class="link_product_img"><img src="./img/products/asus.webp" alt="" class="link_product"></a>
+                                <p >Ноутбук ASUS TUF Dash FX516PR-AZ019</p>
+                                <p class="price_product"><span>120 000сом</span></p>
+                                <div class="cart_product">
+                                    <button>В корзину</button>
+                                    <a href="./product.html"><button>Подробнее</button></a>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="pop-prduct-item">
-                                <img src="./img/cam.svg" alt="" />
-                                <p class="category-type">
-                                    <span>категория</span> <span>Видеонаблюдения</span>
-                                </p>
-                                <p><a href="product.html"> камера Canon</a></p>
-                                <p><strong>56000 som</strong></p>
-                                <div class="cart-product">
-                                    <img src="./img/icons/cart-pop.svg" alt="" />
+                            <div class="pop-product-item">
+                                <a class="link_product_img"><img src="./img/products/asus.webp" alt="" class="link_product"></a>
+                                <p >Ноутбук ASUS TUF Dash FX516PR-AZ019</p>
+                                <p class="price_product"><span>120 000сом</span></p>
+                                <div class="cart_product">
+                                    <button>В корзину</button>
+                                    <a href="./product.html"><button>Подробнее</button></a>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="pop-prduct-item">
-                                <img src="./img/not.svg" alt="" />
-                                <p class="category-type">
-                                    <span>категория</span> <span>Компьтеры</span>
-                                </p>
-                                <p>компьтер Apple</p>
-                                <p><strong>56000 som</strong></p>
-                                <div class="cart-product">
-                                    <img src="./img/icons/cart-pop.svg" alt="" />
+                            <div class="pop-product-item">
+                                <a class="link_product_img"><img src="./img/products/asus.webp" alt="" class="link_product"></a>
+                                <p >Ноутбук ASUS TUF Dash FX516PR-AZ019</p>
+                                <p class="price_product"><span>120 000сом</span></p>
+                                <div class="cart_product">
+                                    <button>В корзину</button>
+                                    <a href="./product.html"><button>Подробнее</button></a>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="pop-prduct-item">
-                                <img src="./img/cam.svg" alt="" />
-                                <p class="category-type">
-                                    <span>категория</span> <span>Видеонаблюдения</span>
-                                </p>
-                                <p>камера Canon</p>
-                                <p><strong>56000 som</strong></p>
-                                <div class="cart-product">
-                                    <img src="./img/icons/cart-pop.svg" alt="" />
+                            <div class="pop-product-item">
+                                <a class="link_product_img"><img src="./img/products/asus.webp" alt="" class="link_product"></a>
+                                <p >Ноутбук ASUS TUF Dash FX516PR-AZ019</p>
+                                <p class="price_product"><span>120 000сом</span></p>
+                                <div class="cart_product">
+                                    <button>В корзину</button>
+                                    <a href="./product.html"><button>Подробнее</button></a>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="pop-prduct-item">
-                                <img src="./img/not.svg" alt="" />
-                                <p class="category-type">
-                                    <span>категория</span> <span>Компьтеры </span>
-                                </p>
-                                <p>компьтер Apple</p>
-                                <p><strong>56000 som</strong></p>
-                                <div class="cart-product">
-                                    <img src="./img/icons/cart-pop.svg" alt="" />
+                            <div class="pop-product-item">
+                                <a class="link_product_img"><img src="./img/products/asus.webp" alt="" class="link_product"></a>
+                                <p >Ноутбук ASUS TUF Dash FX516PR-AZ019</p>
+                                <p class="price_product"><span>120 000сом</span></p>
+                                <div class="cart_product">
+                                    <button>В корзину</button>
+                                    <a href="./product.html"><button>Подробнее</button></a>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="pop-prduct-item">
-                                <img src="./img/cam.svg" alt="" />
-                                <p class="category-type">
-                                    <span>категория</span> <span>Видеонаблюдения</span>
-                                </p>
-                                <p>камера Canon</p>
-                                <p><strong>56000 som</strong></p>
-                                <div class="cart-product">
-                                    <img src="./img/icons/cart-pop.svg" alt="" />
+                            <div class="pop-product-item">
+                                <a class="link_product_img"><img src="./img/products/asus1.webp" alt="" class="link_product"></a>
+                                <p >Ноутбук ASUS TUF Dash FX516PR-AZ019</p>
+                                <p class="price_product"><span>120 000сом</span></p>
+                                <div class="cart_product">
+                                    <button>В корзину</button>
+                                    <a href="./product.html"><button>Подробнее</button></a>
                                 </div>
                             </div>
                         </div>
@@ -294,7 +287,6 @@
             </div>
         </div>
     </div>
-
     <!-- Подвал сайта -->
     <div class="footer">
         <div class="container">

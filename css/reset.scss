@@ -43,6 +43,9 @@
           width: 590px;
         }
       }
+      .select{
+      display: none;
+      }
     }
   }
   .slider-block {
@@ -100,6 +103,7 @@
             height: auto;
             left: -99999px;
             select {
+              display: none;
               outline: none;
               right: 10%;
               position: absolute;
@@ -327,6 +331,23 @@
         }
         .product_price {
           font-size: 18px;
+        }
+      }
+    }
+  }
+  // delivery
+  .delivery{
+    .container{
+      flex-wrap: wrap;
+      .img_delivery{
+        position: absolute;
+        z-index: -2;
+        opacity: 0.6;
+        right: 0;
+        display: flex;
+        align-items: center;
+        img{
+          width: 100%;
         }
       }
     }
